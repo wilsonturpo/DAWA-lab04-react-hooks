@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 const Statistics = (props) => {
 
   return (
-    <div style={{margin:20}}>    
+    <div style={{margin:20}}>   
 
       <h2>Statistics</h2>      
 

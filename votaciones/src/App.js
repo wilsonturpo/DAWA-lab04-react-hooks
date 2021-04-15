@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import Statistics from './components/Statistics';
+import Button from './components/Button'
 
 const App = () => {
   // save clicks of each button to its own state
@@ -43,14 +44,15 @@ const App = () => {
   return (
     <Fragment>
       <div style={{margin:20}}>
-        <h1>Give feedback</h1>
-        <div>
-          <button onClick={handleGood} style={{margin:10}}>Good</button> 
-          <button onClick={handleNeutral} style={{margin:10}}>Neutral</button>
-          <button onClick={handleBad} style={{margin:10}}>Bad</button>
-        </div>
+      <h1>Give feedback</h1>
+      <div>
+        <Button text="Good" value={handleGood}/> 
+        <Button text="Neutral" value={handleNeutral}/>
+        <Button text="Bad" value={handleBad}/>
+      </div>
 
       </div>
+      
       <Statistics 
         good={good} 
         neutral={neutral}
