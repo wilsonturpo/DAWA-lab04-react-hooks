@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 const Button = (props) => {
 
   return (
-    <button onClick={props.value}>{props.text}</button>
+    <button 
+        style={{margin:10}} 
+        onClick={props.value}
+        className={props.color}
+    >{props.text}</button>
   )
 }
 

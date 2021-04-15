@@ -11,15 +11,15 @@ const Statistics = (props) => {
       {props.all ==0 ? (
         <p>No feedback given</p>
       ) : (
-        <div>
-            <p>Good: {props.good}</p>
-            <p>Neutral: {props.neutral}</p>
-            <p>Bad: {props.bad}</p>
-            <p>All: {props.all}</p>
+        <ul>
+            <li>Good: {props.good}</li>
+            <li>Neutral: {props.neutral}</li>
+            <li>Bad: {props.bad}</li>
+            <li>All: {props.all}</li>
 
-            <p>Average: {props.average}</p>            
-            <p>Positive: {props.positive}</p>
-        </div>
+            <li>Average: {props.average}</li>            
+            <li>Positive: {props.positive}</li>
+        </ul>
       )}
 
       

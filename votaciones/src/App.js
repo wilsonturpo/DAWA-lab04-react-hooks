@@ -43,16 +43,16 @@ const App = () => {
 
   return (
     <Fragment>
-      <div style={{margin:20}}>
-      <h1>Give feedback</h1>
-      <div>
-        <Button text="Good" value={handleGood}/> 
-        <Button text="Neutral" value={handleNeutral}/>
-        <Button text="Bad" value={handleBad}/>
-      </div>
+      <div style={{background:"#d97a32"}}>
+        <h1>Give feedback</h1>
+        <div>
+          <Button text="Good" value={handleGood} color="btn btn-success"/> 
+          <Button text="Neutral" value={handleNeutral} color="btn btn-primary"/>
+          <Button text="Bad" value={handleBad} color="btn btn-danger"/>
+        </div>
 
       </div>
-      
+      <div style={{background:"#98b8eb"}}>
       <Statistics 
         good={good} 
         neutral={neutral}
@@ -61,6 +61,8 @@ const App = () => {
         average={average && average / total}
         positive={good && good*100 / total}
       />
+      </div>
+      
     </Fragment>
     
   )
