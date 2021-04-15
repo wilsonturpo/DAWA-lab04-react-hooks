@@ -48,18 +48,19 @@ const App = (props) => {
   }
 
   return (
-    <div style={{margin:20}}>
-      
+    <div style={{margin:20, background:"#2f86c4"}}>
+
       <p>{props.anecdotes[selected]}</p>
       
       <br></br> <br></br>
 
-      <button
+      <button className="btn btn-primary"
         onClick={()=>handleVote(selected)}>
         Vote
       </button>
 
       <button
+        className="btn btn-success"
         onClick={handleNext}>
         Next Anecdote
       </button>
